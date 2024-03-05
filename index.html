@@ -15,15 +15,31 @@
   <body>
     <div class="content">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city.." />
-          <input type="submit" value="Search" />
+        <form class="form-content">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            class="search-city-input"
+          />
+          <input type="submit" value="Search" class="submit-form-button" />
         </form>
       </header>
       <main>
-        <h1>London</h1>
-        <div>Tuesday 17:47, broken clouds Humidity: 86%, Wind: 3.09km/h</div>
-        <div>🌧️ 7°C</div>
+        <div class="weather-container-data">
+          <div>
+            <h1 class="weather-city">London</h1>
+            <p class="weather-city-info">
+              Tuesday 17:47, broken clouds
+              <br />
+              Humidity: <strong>86%</strong>, Wind: <strong>3.09km/h</strong>
+            </p>
+          </div>
+          <div class="weather-current-container">
+            <div class="weather-icon">🌧️</div>
+            <div class="weather-current-temp">7</div>
+            <div class="weather-unit">°C</div>
+          </div>
+        </div>
       </main>
       <p></p>
       <footer>
