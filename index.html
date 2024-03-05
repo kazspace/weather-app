@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Silkscreen:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="content">
@@ -28,16 +29,17 @@
       <main>
         <div class="weather-container-data">
           <div>
-            <h1 class="weather-city" id="weather-city">London</h1>
+            <h1 class="weather-city" id="weather-city"></h1>
             <p class="weather-city-info">
-              Tuesday 17:47, broken clouds
+              Tuesday 17:47, <span id="weather-description">broken clouds</span>
               <br />
-              Humidity: <strong>86%</strong>, Wind: <strong>3.09km/h</strong>
+              Humidity: <strong id="humidity">86%</strong>, Wind:
+              <strong id="wind">3.09km/h</strong>
             </p>
           </div>
           <div class="weather-current-container">
             <div class="weather-icon">🌧️</div>
-            <div class="weather-current-temp">7</div>
+            <div class="weather-current-temp" id="weather-current-temp"></div>
             <div class="weather-unit">°C</div>
           </div>
         </div>
