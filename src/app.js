@@ -16,8 +16,9 @@ function refreshWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
 
-  mainCity.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature);
+
+  mainCity.innerHTML = response.data.city;
   humidityElement.innerHTML = `${humidity}%`;
   windElement.innerHTML = `${windSpeed}km/h`;
   description.innerHTML = weatherDescription;
@@ -39,11 +40,10 @@ function formatDate(date) {
   ];
   let day = days[date.getDay()];
 
-  return `${day} ${hours}:${minutes}`;
-
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+  return `${day} ${hours}:${minutes}`;
 }
 
 function searchingCity(city) {
