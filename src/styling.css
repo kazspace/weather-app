@@ -97,13 +97,12 @@ main {
 }
 
 .weather-icon {
-  font-size: 48px;
-  margin-top: 22px;
+  width: 88px;
+  height: 88px;
 }
 
 .weather-current-temp {
   font-size: 80px;
-  margin-left: 10px;
 }
 
 .weather-unit {
