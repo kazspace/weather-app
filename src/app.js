@@ -60,7 +60,6 @@ function handleSearch(event) {
 }
 
 let searchForm = document.querySelector("#search-form");
-console.log(searchForm);
 
 searchForm.addEventListener("submit", handleSearch);
 
